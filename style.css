@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    
+}
+
+body {
+    background-color: white;
+      
+}
+
+.alinha {
+    float: left;
+    position: relative;
+    width: 100%;
+}
+
+.alinha-centro {
+    width: 90%;
+    position: relative;
+    margin: 0 auto;
+}
+
+
+/* AQUI É P/ MEXER DIRETAMENTE NA IMAGEM*/
+
+.img-logo {
+    width:auto;
+    height: 80%;
+    position:relative;
+    margin: auto;
+    display: inline-block;
+}
+
+.logo {
+    height: 80vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.texto {
+    height: 20vh;
+}
+
+.texto .alinha-centro {
+    border-top: 2px #000 solid;
+}
+
+.frase-inferior-esquerda {
+    position: absolute;
+    bottom: 63px;
+    left: 69px; 
+    color: #000; 
+    font-size: 30px;
+}   
+
+.frase-inferior-direita {
+    position: absolute;
+    bottom:29px;
+    right: 68px; 
+    color: #000; 
+    font-size: 24px;
+}
+
+
+@media (max-width:1000px) {
+    .img-logo {
+        position: relative;
+        top: 0;
+        float: none;
+        width: 90%;
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 6vw;
+    }
+
+    .alinha-centro {
+        width: 100%;
+        text-align: center;
+    }
+
+    .frase-inferior-esquerda,
+    .frase-inferior-direita {
+        text-align: center;
+        position: static; /* Remover a posição absoluta */
+        margin: 10px 0; /* Adicionar margem para separar as linhas */
+    }
+
+    .frase-inferior-direita br {
+        display: block; /* Tornar as quebras de linha visíveis novamente */
+        margin-top: 5px; /* Adicionar espaço entre as linhas */
+    }
+
+    .img-logo {
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .img-principal {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .img-principal img {
+        width: 70%;
+    }
+
+    .texto-principal {
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+
+
+
